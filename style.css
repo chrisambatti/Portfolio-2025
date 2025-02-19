@@ -1,0 +1,153 @@
+:root {
+    --dark-color: #05070a;
+    --accent-color:#977bff;
+    --highlight-color:#ffba3b;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--dark-color);
+}
+
+p {
+    line-height: 1.9;
+    font-size: 1rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 75rem;
+    padding: 1.5rem;
+    margin-inline: auto;
+}
+
+.btn {
+    display: inline-flex;
+    background-color: #fff;
+    color: var(--dark-color);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.75rem;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 300ms ease;
+    margin-block: 2.25rem;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn .icon {
+    display: flex;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+}
+
+.logo .dot {
+    font-size: 3.75rem;
+    color: var(--accent-color);
+    line-height: 0;
+}
+
+nav .menu-items {
+    display: flex;
+    gap: 3.75rem;
+    text-transform: uppercase;
+}
+
+nav .menu-items a {
+    transition: all 300ms ease;
+}
+
+nav .menu-items a:hover {
+    color: var(--accent-color);
+}
+
+/* hero */
+
+.hero {
+    color: #fff;
+    margin-top: 6.25rem;
+    position: relative;
+}
+
+.hero .hero-image {
+    position: absolute;
+    top: -5rem;
+    height: 41rem;
+    left: 20rem;
+    z-index:-2;
+    opacity: 0.6;
+}
+
+.hero .image-overlay {
+    position: absolute;
+    top: -10rem;
+    height: 43.75rem;
+    left: 0rem;
+    z-index: -1;
+    background: linear-gradient(to right, var(--dark-color) 80%, transparent);
+}
+
+.hero .socials {
+    display: flex;
+    gap:1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .socials img img {
+    width: 2.5rem;
+}
+
+.hero h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 7.5rem;
+    text-transform:uppercase;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.blue-text {
+    color: var(--accent-color);
+}
+
+.hero .achievements {
+    position: absolute;
+    right: 0;
+    top:18rem;
+    background: rgba(0, 0, 0, 0.7);
+    height: 40rem;
+    width: 17rem;
+    padding: 2rem;
+    border: 4px solid rgba(255, 255, 255, 0.05);
+}
+
