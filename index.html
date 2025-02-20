@@ -12,6 +12,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <div class="bg-elements">
+    <div class="circles-container">
+        <span class="circle circle-1"></span>
+        <span class="circle circle-2"></span>
+        <span class="circle circle-3"></span>
+    </div>
+</div>
     <div class="wrapper">
         <nav>
             <a href="#" class="logo">Portfolio<span class="dot">.</span></a>
@@ -25,11 +32,7 @@
         <!-- end of nav -->
 
         <header class="hero">
-            <div class="circles-container">
-            <span class="circle circle-1"></span>
-            <span class="circle circle-2"></span>
-            <span class="circle circle-3"></span>
-            </div>
+           
 
             <div class="image-overlay">
                 <img class="hero-image" src="images/bg.png" alt="hero img">
@@ -37,8 +40,9 @@
 
             <div class="socials">
                 <a href="#">
-                    <img src="images/linkedin.png" alt="">
-                    <img src="images/github.png" alt="">
+                    <a href="https://www.linkedin.com/in/christopher-ambatti-014155247/"><img src="images/linkedin.png" alt=""></a>
+                    <a href="https://github.com/chrisambatti"><img src="images/github.png" alt=""></a>
+                    
                 </a>
             </div>
 
@@ -82,7 +86,29 @@
         
     </div>
     </header>
+    <!-- end of header -->  
     </div>
+    <section id="about">
+        <div class="wrapper">
+            <div class="left">
+                <img src="images/about.JPG" alt="about image">
+            </div>
+
+            <div class="description">
+                <h2>About Me</h2>
+                <p>
+                    <strong>Hi, I'm Chris</strong> <br />
+                    A Full Stack Developer with a knack for 
+                    developing Websites & Software solutions.
+                </p>
+                <a href="" class="btn outlined"> Download My CV <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20">
+                        <path fill="#B197FC" d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
+                    </svg>
+                </span></a>
+            </div>
+        </div>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
